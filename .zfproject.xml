@@ -19,6 +19,12 @@
           <actionMethod actionName="login"/>
           <actionMethod actionName="logout"/>
         </controllerFile>
+        <controllerFile controllerName="Book">
+          <actionMethod actionName="index"/>
+          <actionMethod actionName="edit"/>
+          <actionMethod actionName="delete"/>
+          <actionMethod actionName="add"/>
+        </controllerFile>
       </controllersDirectory>
       <formsDirectory>
         <formFile formName="Album"/>
@@ -32,6 +38,7 @@
       <modelsDirectory>
         <dbTableDirectory>
           <dbTableFile dbTableName="Albums"/>
+          <dbTableFile dbTableName="Book"/>
         </dbTableDirectory>
         <modelFile modelName="Paginator"/>
       </modelsDirectory>
@@ -62,6 +69,18 @@
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Auth">
             <viewScriptFile forActionName="logout"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Book">
+            <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Book">
+            <viewScriptFile forActionName="edit"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Book">
+            <viewScriptFile forActionName="delete"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Book">
+            <viewScriptFile forActionName="add"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>
@@ -107,6 +126,12 @@
             <testApplicationActionMethod forActionName="index"/>
             <testApplicationActionMethod forActionName="login"/>
             <testApplicationActionMethod forActionName="logout"/>
+          </testApplicationControllerFile>
+          <testApplicationControllerFile forControllerName="Book">
+            <testApplicationActionMethod forActionName="index"/>
+            <testApplicationActionMethod forActionName="edit"/>
+            <testApplicationActionMethod forActionName="delete"/>
+            <testApplicationActionMethod forActionName="add"/>
           </testApplicationControllerFile>
         </testApplicationControllerDirectory>
       </testApplicationDirectory>

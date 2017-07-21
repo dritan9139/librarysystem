@@ -7,7 +7,7 @@ class IndexController extends Zend_Controller_Action
     {
        if (!Zend_Auth::getInstance()->hasIdentity())
        $this->_redirect('auth/index'); // Will go to your indexpage.
-       $this->_helper->layout->setLayout('layout_admin');
+       
     }
 
     public function indexAction()
