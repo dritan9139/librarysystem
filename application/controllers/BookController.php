@@ -11,9 +11,8 @@ class BookController extends Zend_Controller_Action
     public function indexAction()
     {
         // action body
+        $this->_helper->layout->setLayout('layout_admin');
         $db = Zend_Db_Table::getDefaultAdapter(); 
-		$test=4;
-		$test=4;
 		$sql = 'SELECT * FROM book ';
 	    $result = $db->fetchAll($sql);
 	    $page=$this->_getParam('page',1);
